@@ -1,0 +1,38 @@
+.guitar {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.string {
+    width: 150px;
+    height: 20px;
+    background-color: #000;
+    cursor: pointer;
+    position: relative;
+    margin: 10px;
+}
+
+.string:hover {
+    background-color: #555;
+}
+
+.string::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.string:active::after {
+    opacity: 1;
+    animation: stringAnimation 0.3s ease-in-out;
+}
+
+
