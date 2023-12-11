@@ -1,0 +1,37 @@
+.string-container {
+	padding: 2%;
+}
+
+.string-text h5 {
+	display: none;
+	transition: .36s;
+}
+
+.string {	
+	width: fit-content;
+    height: 5px;
+    background: #000;
+    transition: 0.36s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.string-container:hover .string{
+	padding: 10px;
+}
+
+.string-container:hover .string-text h5 {
+	color: #fff;
+	font-size: 20px;
+	display: block;
+}
+
+.guitar{
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
