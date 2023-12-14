@@ -1,14 +1,21 @@
+.guitar {
+    position: relative;
+    display: inline-block;
+}
+
+.guitar-image {
+    max-width: 100%;
+    height: auto;
+}
+
 .string-container {
-	padding: 2%;
+    position: absolute;
+    width: 100%;
+	margin-left: 20%;
 }
 
-.string-text h5 {
-	display: none;
-	transition: .36s;
-}
-
-.string {	
-	width: fit-content;
+.string {
+    width: 900px;
     height: 5px;
     background: #000;
     transition: 0.36s;
@@ -18,20 +25,17 @@
     border-radius: 10px;
 }
 
-.string-container:hover .string{
-	padding: 10px;
+.string-text h5 {
+    display: none;
+    transition: .36s;
+    color: #fff;
+    font-size: 20px;
+}
+
+.string-container:hover .string {
+    padding: 10px;
 }
 
 .string-container:hover .string-text h5 {
-	color: #fff;
-	font-size: 20px;
-	display: block;
-}
-
-.guitar{
-
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
+    display: block;
 }
